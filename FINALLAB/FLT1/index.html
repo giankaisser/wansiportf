@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exercise Layout</title>
+<style>
+  body {
+    height: 3000px;
+    font-family: Arial, sans-serif;
+  }
+
+  /* 🔹 Close Button (top-right, absolute) */
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  /* 🔹 Fixed box bottom-right */
+  .fixed-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    height: 180px;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 🔹 Product Card */
+  .product-container {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+  }
+
+  .product-container img {
+    width: 250px;
+    display: block;
+  }
+
+  /* Discount badge */
+  .discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  /* Add to cart overlay */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay button {
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- 🔹 Close Button -->
+<button class="close-btn" onclick="closePage()">×</button>
+
+<!-- 🔹 Fixed Box -->
+<div class="fixed-box">
+  Fixed Box
+</div>
+
+<!-- 🔹 Product Card -->
+ 
+<div class="product-container">
+  <img src="/images1/shirt.jpg" alt="Shirt">
+  <div class="discount">20% OFF</div>
+
+  <div class="overlay">
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+</div>
+
+<script>
+  function closePage() {
+    alert("Close button clicked!");
+  }
+
+  function addToCart() {
+    alert("Item added to cart!");
+  }
+</script>
+
+</body>
+</html>
