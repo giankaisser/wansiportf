@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task 6 - Display Property</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container{
+            width: 700px;
+            margin: auto;
+        }
+
+        /* 1. Block textboxes */
+        .block-input{
+            display: block;
+            width: 440px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* 2. Paragraph and buttons inline-block */
+        .survey p{
+           
+            display: inline-block;
+            width: 350px;
+            vertical-align: middle;
+        }
+
+        .survey button{
+            
+            display: inline-block;
+            vertical-align: middle;
+            padding: 5px 10px;
+            margin-left: 5px;
+        }
+
+        /* 3. Google section */
+        .google{
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .google img{
+            width: 200px;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        .google input{
+            width: 440px;
+            padding: 10px;
+        }
+
+        /* Challenge - Sign up */
+        .signup{
+            width: 440px;
+            margin-top: 40px;
+        }
+
+        .signup input{
+            width: 150x;
+            padding: 8px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .signup .email{
+            width: 360px;
+            display: block;
+        }
+
+        .signup button{
+            width: 100%;
+            padding: 10px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+        }
+
+        /* Challenge - Uber */
+        .uber{
+            width: 350px;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .uber h2{
+            margin-top: 0;
+        }
+
+        .uber input{
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .uber button{
+            display: inline-block;
+            padding: 8px 12px;
+            margin-right: 5px;
+            border: none;
+        }
+
+        .request{
+            background: black;
+            color: white;
+        }
+
+        .schedule{
+            background: lightgray;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <fieldset>
+        <div class="container">
+
+            <!-- Block Textboxes -->
+            <div align="center" class="name-box">
+                <input type="text" placeholder="Name" class="block-input">
+                <input type="email" placeholder="Email" class="block-input">
+            </div>
+
+            <!-- Paragraph + Buttons Inline-Block -->
+            <div align="center" class="survey">
+                <p>
+                    Thanks for chatting with our customer support.
+                    Would you like to take our quick survey?
+                </p>
+                <button>Yes</button>
+                <button>No</button>
+            </div>
+
+            <!-- Google Search -->
+            <div class="google">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+                <input type="text" placeholder="Search Google or type a URL">
+            </div>
+
+            <!-- Challenge 8d - Sign up -->
+            <div align="center">
+                <div align="center" class="signup">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                    <input type="email" placeholder="Email" class="email">
+                    <button>Sign Up</button>
+                </div>
+            </div>
+
+            <!-- Challenge 8e - Uber -->
+            <div align="center">
+                <div class="uber">
+                    <h2>Request a ride now</h2>
+                    <input type="text" placeholder="Enter pickup location">
+                    <input type="text" placeholder="Enter destination">
+                    <button class="request">Request now</button>
+                    <button class="schedule">Schedule for later</button>
+                </div>
+            </div>
+
+        </div>
+    </fieldset>
+
+</body>
+</html>
