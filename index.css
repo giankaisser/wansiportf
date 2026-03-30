@@ -137,6 +137,10 @@ body {
 }
 
 /* PROJECTS GRID */
+
+a{
+    text-decoration: none;
+}
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
